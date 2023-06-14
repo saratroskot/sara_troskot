@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Troskot</title>
+    <style>
+	
+	@font-face {
+        font-family: 'MyCustomFont';
+        src: url('SaraTroskot.ttf') format('truetype');
+      }
+
+      .custom-font {
+        font-family: 'MyCustomFont', sans-serif;
+      }
+        body {
+            background-color: #f2f2f2;
+            background-image: url('https://www.pixelstalk.net/wp-content/uploads/images6/Pixel-Wallpaper-Desktop.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: #7B1D11;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #CB4D29;
+        }
+		
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            background-color: #CB4D29; 
+            padding: 10px;
+        }
+
+        .navigation li {
+            border-right: 1px solid #FFB788;
+        }
+
+        .navigation li:last-child {
+            border-right: none;
+        }
+
+        .navigation li a {
+            color: #FFB788;
+            text-decoration: none;
+            padding: 125px;
+        }
+
+        .navigation li a:hover {
+            color: red;
+        }
+
+        .welcome {
+            background-color: #CB4D29; 
+            padding: 10px; 
+            display: inline-block;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="custom-font">Sara Troskot</h1>
+        <h2>Digitalni multimedij 1</h2>
+        <nav>
+            <ul class="navigation">
+                <li><a href="o_meni.html">O Meni</a></li>
+                <li><a href="vjezbe.html">Vježbe</a></li>
+                <li><a href="video.html">Video</a></li>
+            </ul>
+        </nav>
+        <p>Dobrodošli na moju stranicu!</p>
+    </div>
+</body>
+</html>

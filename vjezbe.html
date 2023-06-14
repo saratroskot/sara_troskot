@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sara Troskot - Vježbe</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+      body {
+        background-color: #f2f2f2;
+        background-image: url("https://www.pixelstalk.net/wp-content/uploads/images6/Pixel-Wallpaper-Desktop.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: "Roboto", sans-serif;
+        color: #cf0505;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        overflow: hidden;
+        padding: 0 2em;
+      }
+
+      h1 {
+        font-family: "Bebas Neue", cursive;
+        font-size: 3em;
+        margin-bottom: 0.5em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+      }
+
+      .navigation {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        background-color: #cb4d29;
+        padding: 10px;
+      }
+
+      .navigation a {
+        color: #ffb788;
+        text-decoration: none;
+      }
+
+      .navigation a:hover {
+        color: red;
+      }
+
+      .exercises-section h3 {
+        font-size: 1.3em;
+        margin-bottom: 0.8em;
+        color: #0e0e0e;
+        text-transform: uppercase;
+        position: relative;
+      }
+
+      .exercises-section h3:before {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 3px;
+        width: 80px;
+        background: #da365d;
+      }
+
+      .exercise-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1em;
+        box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.5s ease, transform 0.5s ease;
+        background: #ffad66;
+        width: 300px;
+      }
+
+      .exercise-card img {
+        max-width: 300px;
+        max-height: 200px;
+        width: auto;
+        height: auto;
+      }
+
+      .exercise-card p {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        color: #0e0e0e;
+        word-wrap: break-word;
+        margin: 0;
+      }
+
+      .exercise-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 30px 30px -5px rgba(0, 0, 0, 0.2);
+      }
+
+      .exercise-row {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .image-card {
+        margin: 1em;
+        box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.5s ease, transform 0.5s ease;
+        background: #ffad66;
+		padding: 20px;
+      }
+
+      .image-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 30px 30px -5px rgba(0, 0, 0, 0.2);
+      }
+
+      .image-card p {
+        padding: 1em;
+        background: #ffad66;
+        color: #5d3701;
+        font-size: 1.1em;
+		
+      }
+
+      .image-card img {
+        max-width: 400px;
+        max-height: 500px;
+        width: auto;
+        height: auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+		
+      }
+
+      .image-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      @keyframes important {
+        0%,
+        100% {
+          color: #da365d;
+          text-shadow: none;
+        }
+        50% {
+          color: #fff;
+          text-shadow: 0 0 5px #da365d, 0 0 10px #da365d, 0 0 15px #da365d,
+            0 0 20px #da365d;
+        }
+      }
+    </style>
+    <script>
+      function toggleText(id) {
+        var element = document.getElementById(id);
+        if (element.style.display === "none") {
+          element.style.display = "block";
+        } else {
+          element.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sara Troskot</h1>
+      <h2>Vježbe</h2>
+
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="o_meni.html">O Meni</a></li>
+          <li><a href="video.html">Video</a></li>
+        </ul>
+      </nav>
+
+      <div class="exercises-section">
+        <h3>Vektor Grafika</h3>
+        <div class="exercise-row">
+          <div class="exercise-card">
+            <img src="vjezba1v.jpg" />
+            <p>Vježba 1</p>
+            <hr>
+            <p>
+              Izrada vlastitog fonta
+            </p>
+          </div>
+          <div class="exercise-card">
+            <img src="vjezba2v.jpg" />
+            <p>Vježba 2</p>
+			<hr>
+            <p>
+              Definiranje swatch boja,<br> transparencija, slojevi
+            </p>
+          </div>
+          <div class="exercise-card">
+            <img src="vjezba3v.jpg" />
+            <p>Vježba 3</p>
+			<hr>
+            <p>
+              Izrada složenih objekata, gradijenti
+            </p>
+          </div>
+        </div>
+        <h3 class="important">Projektni zadatak</h3>
+        <div class="image-card">
+          <div class="image-container">
+            <img src="vjezba4v.jpg" onclick="toggleText('text2')" />
+          </div>
+          <p id="text2" style="display: none">
+            Projektni zadatak na temu "Podmorje"
+          </p>
+        </div>
+		
+		 <h3>Piksel Grafika</h3>
+        <div class="exercise-row">
+          <div class="exercise-card">
+            <img src="vjezba1p.jpg" />
+            <p>Vježba 1</p>
+            <hr>
+            <p>
+              Retuširanje fotografije korištenjem <br>stamp toola
+            </p>
+          </div>
+          <div class="exercise-card">
+            <img src="vjezba2p.jpg" />
+            <p>Vježba 2</p>
+			<hr>
+			<p>Tehnika koloriranja<br> crno bijelih fotografija</p>
+          </div>
+          <div class="exercise-card">
+            <img src="vjezba3p.jpg" />
+            <p>Vježba 3</p>
+			<hr>
+			<p>Fotomontaža, korekcije boja,<br>selekcije pomoću kanala</p>
+          </div>
+        </div>
+        <h3 class="important">Projektni zadatak</h3>
+<div class="image-card">
+  <div class="image-container">
+    <img src="vjezba4p.jpg" onclick="toggleText('text3')" />
+  </div>
+  <p id="text3" style="display: none">
+    Projektni zadatak koristeći dosad sve naučene tehnike
+  </p>
+</div>
+
+
+        <h3>Web i video</h3>
+        <div class="exercise-row">
+          <div class="exercise-card">
+             <img src="vjezba1vid.gif" alt="Animated GIF" />
+            <p>Vježba 1</p>
+            <hr>
+            <p>
+              Izrada kinematografa
+            </p>
+          </div>
+          <div class="exercise-card">
+            <video src="vjezba2vid.mp4"width="300" height="240"controls></video>
+            <p>Vježba 2</p>
+		</div>
+       </div>
+
+ 
+      </div>
+    </div>
+  </body>
+</html>
